@@ -1,0 +1,11 @@
+name: xl2xapi
+version: 0.1
+synopsis: An xl-config-file to xapi-VM converter
+obuild-ver: 1
+
+executable xl2xapi
+  main: xl2xapi.ml
+  src-dir: src
+  build-deps: xen-api-client, stdext, rpclib, rpclib.syntax
+  pp: camlp4o
+
